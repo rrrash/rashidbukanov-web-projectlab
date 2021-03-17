@@ -30,7 +30,7 @@ class ClientTest extends TestCase
         $response = $this->get('/client/10000');
     $response->assertStatus(404);
     }
-    
+    //lol
 
     public function test_client_response(){
         $response = $this->get('/client/1');
