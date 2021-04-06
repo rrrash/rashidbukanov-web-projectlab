@@ -37,3 +37,6 @@ Route::get('client/create',function (){
 });
 Route::post('client/create',[ClientController::class,'store'])->name('add-client');
 Route::get('client/{id}', [ClientController::class,'get_client']);
+
+Route::post('profile','Profile@store');
+Route::view('profile','profile');
